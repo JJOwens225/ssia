@@ -123,7 +123,20 @@ header {
   z-index: 3;
   padding: 10px;
   width: 70%;
-  display: none;
+
+  /* Transition douce */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+}
+
+/* Classe pour afficher le menu */
+.nav-element2.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .nav-element2 div {
