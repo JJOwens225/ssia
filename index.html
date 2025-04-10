@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SSIA | Acceuil</title>
+    <title>SSIA | Acceuil-fr</title>
     <!-- style-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- bootstrap link-->
@@ -28,6 +28,7 @@
       href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
       rel="stylesheet"
     />
+
     <!-- font-awesome-->
     <link
       rel="stylesheet"
@@ -44,57 +45,160 @@
   <body>
     <!-- header-->
     <header>
-      <a href="" class="logo"
-        ><img
-          id="logo"
-          src="assets/images/real-logo-m.png"
-          alt="logo"
-          srcset=""
-      /></a>
-      <nav>
-        <ul class="nav-element">
-          <li><a href="#home">Acceuil</a></li>
-          <li><a href="#about">Qui sommes nous?</a></li>
-          <li><a href="#activity">Nos activités</a></li>
-          <li><a href="#testi">Témoignages</a></li>
-          <li><a href="#leader">Nos leaders</a></li>
-          <li><a href="#contact">Contacter nous</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/images/logo.jpg" alt="" srcset=""
+          /></a>
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Langues
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="">Français</a></li>
+              <li><a href="">Anglais</a></li>
+            </ul>
+          </div>
+          <button
+            id="menu"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SSIA
+                </a>
+                <ul
+                  class="dropdown-menu border-0"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#about">Qui sommes nous ?</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#intervention"
+                      >Zones d'intervention</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#testi">Témoignages</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#leader">Nos leaders</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="pages/experitse.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Expertise
+                </a>
+                <ul
+                  class="dropdown-menu border-0"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Formation et Insertion Professionnelle</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Éducation</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Développement Agricole</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Protection Sociale</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/projets.html"
+                  >Projets</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href=""
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Agir avec nous
+                </a>
+                <ul
+                  class="dropdown-menu border-0"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="pages/agir.html#don"
+                      >Faire un don</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/agir.html#join"
+                      >Nous rejoindre</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/agir.html#admission"
+                      >Devenez bénévole</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/agir.html#fondation"
+                      >Fondations et Entreprises</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/ressources.html"
+                  >Ressources</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      <div class="btn-group">
-        <button
-          class="btn btn-sm dropdown-toggle"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Langues
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="index.html">Français</a></li>
-          <li><a href="pages/acceuil-en.html">Anglais</a></li>
-          <li><a href="pages/acceuil-es.html">Espagnol</a></li>
-        </ul>
-      </div>
-
-      <div><i class="fa-solid fa-bars"></i></div>
     </header>
-    <!-- nav-md-->
-    <div class="nav-element2">
-      <div><i class="fa-solid fa-xmark"></i></div>
-      <nav>
-        <ul>
-          <li><a href="#home">Acceuil</a></li>
-          <li><a href="#about">Qui sommes nous?</a></li>
-          <li><a href="#activity">Nos activités</a></li>
-          <li><a href="#testi">Témoignages</a></li>
-          <li><a href="#leader">Nos leaders</a></li>
-          <li><a href="#contact">Contacter nous</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- main-->
     <main>
       <section id="home">
         <div
@@ -200,9 +304,7 @@
         </div>
       </section>
       <section id="about">
-        <h1 class="animate__animated wow animate__fadeInUpBig animate__slow">
-          QUI SOMMES NOUS?
-        </h1>
+        <h1 class="">QUI SOMMES NOUS?</h1>
         <div
           class="animate__animated wow animate__bounceInRight animate__slow"
         ></div>
@@ -219,25 +321,13 @@
       </section>
 
       <section id="intervention">
-        <h1 class="animate__animated wow animate__fadeInUpBig animate__slow">
-          ZONES D'INTERVENTION
-        </h1>
+        <h1 class="">ZONES D'INTERVENTION</h1>
         <div
           class="animate__animated wow animate__bounceInRight animate__slow"
         ></div>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
+        <p>Brésil, Mozambique, Guinée-Bissau, Tchad, République du Congo</p>
       </section>
-      <section id="activity">
+      <!-- <section id="activity">
         <h1>NOS ACTIVITES</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -294,97 +384,91 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
       <section id="testi">
         <h1>TEMOIGNAGES</h1>
-        <div class="testi">
-          <div class="text-testi">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Rejoindre cette organisation, c’est rejoindre une famille qui
-              œuvre pour un avenir meilleur.
-            </p>
-            <div class="quote-right">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="perso">
-            <img src="assets/images/yong.JPG" alt="" />
-            <h3>Young Community</h3>
-          </div>
-        </div>
-        <div class="testi">
-          <div class="text-testi">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              L’engagement, le professionnalisme et la solidarité qui animent
-              cette organisation font toute la différence. SSIA International
-              est bien plus qu’une organisation, c’est une véritable communauté
-              de personnes unies par la solidarité et l’envie de changer les
-              choses.
-            </p>
-            <div class="quote-right">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="perso">
-            <img src="assets/images/marie.JPG" alt="" />
-            <h3>Djakalet Marie</h3>
-          </div>
-        </div>
-        <div class="testi">
-          <div class="text-testi">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Save to Save International Association m’a offert une opportunité
-              unique de m’engager dans une cause qui me tient à cœur. Grâce à
-              leurs actions et à leur dévouement, j’ai pu voir concrètement
-              l’impact que nous pouvons avoir ensemble.
-            </p>
-            <div class="quote-right">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="perso">
-            <img src="assets/images/grace.jpg" alt="" />
-            <h3>Grace</h3>
-          </div>
-        </div>
-        <div class="testi">
-          <div class="text-testi">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              J’ai découvert une équipe passionnée, engagée et déterminée à
-              apporter un réel changement. Chaque action menée est porteuse
-              d’espoir et d’impact, et je suis fier de contribuer à cette belle
-              mission.
-            </p>
-            <div class="quote-right">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="perso">
-            <img src="assets/images/lebondo.jpg" alt="" />
-            <h3>Lebondo Laurel</h3>
-          </div>
-        </div>
-        <div class="testi">
-          <div class="text-testi">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Save to Save International Association est bien plus qu’une
-              organisation : c’est une école de leadership et d’engagement.
-              Grâce à cette association, j’ai appris à mener des actions
-              concrètes, à travailler en équipe et à développer mon sens des
-              responsabilités.
-            </p>
-            <div class="quote-right">
-              <i class="fa fa-quote-right"></i>
-            </div>
-          </div>
-          <div class="perso">
-            <img src="assets/images/dahila.jpg" alt="" />
-            <h3>Dahila Nanda</h3>
+        <div class="testi-box">
+          <div class="testimoning">
+            <section class="text-testi" id="testi1">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                Rejoindre cette organisation, c’est rejoindre une famille qui
+                œuvre pour un avenir meilleur.
+              </p>
+              <div class="quote-right">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="perso">
+                <img src="assets/images/yong.JPG" alt="" />
+                <h3>Young Community</h3>
+              </div>
+            </section>
+            <section class="text-testi" id="testi2">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                L’engagement, le professionnalisme et la solidarité qui animent
+                cette organisation font toute la différence. SSIA International
+                est bien plus qu’une organisation, c’est une véritable
+                communauté de personnes unies par la solidarité et l’envie de
+                changer les choses.
+              </p>
+              <div class="quote-right">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="perso">
+                <img src="assets/images/marie.JPG" alt="" />
+                <h3>Djakalet Marie</h3>
+              </div>
+            </section>
+            <section class="text-testi" id="testi3">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                Save to Save International Association m’a offert une
+                opportunité unique de m’engager dans une cause qui me tient à
+                cœur. Grâce à leurs actions et à leur dévouement, j’ai pu voir
+                concrètement l’impact que nous pouvons avoir ensemble.
+              </p>
+              <div class="quote-right">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="perso">
+                <img src="assets/images/grace.jpg" alt="" />
+                <h3>Grace</h3>
+              </div>
+            </section>
+            <section class="text-testi" id="testi4">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                J’ai découvert une équipe passionnée, engagée et déterminée à
+                apporter un réel changement. Chaque action menée est porteuse
+                d’espoir et d’impact, et je suis fier de contribuer à cette
+                belle mission.
+              </p>
+              <div class="quote-right">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="perso">
+                <img src="assets/images/lebondo.jpg" alt="" />
+                <h3>Lebondo Laurel</h3>
+              </div>
+            </section>
+            <section class="text-testi" id="testi5">
+              <i class="fa fa-quote-left"></i>
+              <p>
+                Save to Save International Association est bien plus qu’une
+                organisation : c’est une école de leadership et d’engagement.
+                Grâce à cette association, j’ai appris à mener des actions
+                concrètes, à travailler en équipe et à développer mon sens des
+                responsabilités.
+              </p>
+              <div class="quote-right">
+                <i class="fa fa-quote-right"></i>
+              </div>
+              <div class="perso">
+                <img src="assets/images/dahila.jpg" alt="" />
+                <h3>Dahila Nanda</h3>
+              </div>
+            </section>
           </div>
         </div>
       </section>
@@ -462,18 +546,22 @@
     <!-- footer-->
     <footer>
       <div>
-        <img src="assets/images/real-logo-m.png" alt="logo" srcset="" />
+        <img src="assets/images/logo.jpg" alt="logo" srcset="" />
       </div>
       <div class="liens">
         <h1>Liens utiles</h1>
         <ul class="">
-          <li><a href="#home">Acceuil</a></li>
-          <li><a href="#about">Qui sommes nous?</a></li>
-          <li><a href="#activity">Nos activités</a></li>
-          <li><a href="#testi">Témoignages</a></li>
-          <li><a href="#leader">Nos leaders</a></li>
-          <li><a href="#contact">Contacter nous</a></li>
+          <li><a href="#">SSIA</a></li>
+          <li><a href="pages/expertise.html">Expertise</a></li>
+          <li><a href="pages/projets.html">Projet</a></li>
+          <li><a href="pages/agir.html">Agir avec nous</a></li>
+          <li><a href="pages/ressources.html">Ressources</a></li>
         </ul>
+      </div>
+      <div class="contact">
+        <h1>Coordonnées</h1>
+        <p>international.ssia@gmail.com</p>
+        <p>12 Ter Avenue Marie Reynoard, Grenoble 38100</p>
       </div>
       <div class="follow">
         <h1>Suivez nous</h1>

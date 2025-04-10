@@ -1,0 +1,96 @@
+:root {
+  --color-green: #2cb34e;
+  --color-greent: #2cb34e7c;
+  --color-greenh: #1c7833;
+  --color-greenp: #0f3f1b;
+  --color-greenpt: #0f3f1b80;
+  --color-blue: #0502cc;
+  --color-bluet: #0502cc7c;
+  --color-blueh: #020075;
+  --color-bluep: #03014c;
+  --color-bluept: #03014ca3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-top: 70px;
+  color: white;
+}
+
+section p {
+  padding: 10px;
+}
+
+section h3 {
+  padding: 10px;
+}
+
+.title {
+  font-size: 30px;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: white;
+}
+
+.line-down {
+  border: 2px solid var(--color-green);
+  margin-bottom: 30px;
+  width: 30%;
+  margin-left: 10px;
+}
+
+.files ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.files li {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.files i {
+  color: rgb(185, 142, 2);
+}
+
+.files a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.files a:hover {
+  color: white;
+  text-decoration: underline solid 2px white;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.text-grid p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  border-radius: 15px;
+}
